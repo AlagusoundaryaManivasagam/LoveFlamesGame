@@ -3,11 +3,21 @@
 </head>
 <body>
     <h1>Love Flames</h1>
-    <label for="name1">Enter your name</label>
-    <input id="name1">
-    <label for="name2">Enter your crush's name</label>
-    <input id="name2">
-    <button id="btn" onclick="flames()">Flames</button>
-    <div id="ans"></div>
+    <table>
+        <tr>
+            <td><label for="name1">Enter your name</label></td>
+            <td><input id="name1"></td>
+        </tr>
+        <tr>
+            <td><label for="name2">Enter your crush's name</label></td>
+            <td><input id="name2"></td>
+        </tr>
+        <tr>
+            <td class="c" colspan="2"><button id="btn" onclick="flames()">Flames</button></td>
+        </tr>
+        <tr>
+            <td class="c" colspan="2"><div  id="ans"></div></td>
+        </tr>
+    </table>
     <script src="script.js"></script>
 </body>
