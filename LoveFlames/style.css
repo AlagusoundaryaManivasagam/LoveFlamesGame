@@ -28,8 +28,35 @@ td{
 }
 label{
     text-align: right;
+    font-size: 25px;
 }
 button{
     background-color: cornflowerblue;
-    color: pink;
+    color: purple;
+    width: 20%;
+    height: 8%;
+    font-size: 30px;
+    font-weight: bolder;
+    border: none;
+    border-radius: 10px;
+    font-family: "Sevillana", cursive;
+}
+input{
+    width: 300px;
+    height: 40px;
+    background-color:bisque;
+    border: none;
+    border-radius: 10px;
+    font-size: 25px;
+    color: purple;
+    font-family: "Sevillana", cursive;
+
+}
+#ans{
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: "Sevillana", cursive;
+    background-color: cornflowerblue;
+    color: purple;
+    border-radius: 10px;
 }
