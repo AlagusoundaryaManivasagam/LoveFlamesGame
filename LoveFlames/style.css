@@ -60,3 +60,12 @@ input{
     color: purple;
     border-radius: 10px;
 }
+.error{
+    color: red;
+    font-weight: 500;
+    background-color:black;
+    border-radius: 5px;
+}
+.space{
+    padding: 5px;
+}

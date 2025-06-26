@@ -2,6 +2,14 @@ var btn = document.getElementById("btn")
 const name1 = document.getElementById("name1")
 const name2 = document.getElementById("name2")
 var answer = document.getElementById("ans")
+var nError = document.getElementById("nameError")
+var cnError = document.getElementById("cnameError")
+var noError = true;
+
+function clearMessages() {
+            answer.innerHTML = ''; // Clear existing messages
+        }
+
 function flames(){
     const string1 = name1.value
     const string2 = name2.value
@@ -67,5 +75,32 @@ function flames(){
         break;
         
     }
+    
+
     answer.append(message)
 }
+function validateInputs(){
+    nError.textContent = ''
+    cnError.textContent = ''
+    
+    if(name1.value === ''){
+        noError = false;
+        nError.textContent = 'Please enter your name'
+    }
+     if(name2.value === ''){
+        noError = false;
+        cnError.textContent = 'Please enter your crush\'s name'
+     }
+}
+
+btn.addEventListener("click", () => {
+    
+    clearMessages();
+    validateInputs();
+    if(noError){
+    
+    flames();
+    }
+    noError = true
+    
+})
